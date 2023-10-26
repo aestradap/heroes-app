@@ -5,6 +5,7 @@ import {MarvelScreen} from "../components/marvel/MarvelScreen";
 import {DcScreen} from "../components/dc/DcScreen";
 import {Navbar} from "../components/ui/NavBar";
 import {HeroesScreen} from "../components/heroes/HeroesScreen";
+import {SearchScreen} from "../components/search/SearchScreen";
 
 export const AppRouter = () => {
     return <div>
@@ -13,6 +14,7 @@ export const AppRouter = () => {
                 <Route index element={<MarvelScreen/>}/>
                 <Route path="dc" element={<DcScreen/>}/>
                 <Route path="marvel" element={<MarvelScreen/>}/>
+                <Route path="search" element={<SearchScreen/>}/>
                 <Route path="hero/:heroeId" element={<HeroesScreen/>}/>
 
                 <Route path="*" element={<NoMatch/>}/>

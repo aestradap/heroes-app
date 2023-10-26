@@ -10,26 +10,56 @@ export const HeroCard = ({
                          }) => {
 
     return (
-        <div className="col-sm-4 col-md-3 py-3">
-            <div className="card border-primary">
-                <div className="card-body">
-                    <img src={`./assets/heroes/${id}.jpg`} className="card-img"/>
-                    <h4 className="card-title">{superhero}</h4>
-                    <p className="card-text">{alter_ego}</p>
-                    {
-                        (alter_ego != characters)
-                        && <p className="card-text">
-                            {characters}
+
+
+        <div className="card mb-3 me-3" style={{maxWidth: 540}}>
+            <div className="row g-0">
+                <div className="col-md-4">
+                    <img src={`./assets/heroes/${id}.jpg`}
+                         className="img-fluid rounded-start"
+                         alt="..."
+                    />
+                </div>
+                <div className="col-md-8">
+                    <div className="card-body">
+                        <h4 className="card-title">{superhero}</h4>
+                        <p className="card-text">{alter_ego}</p>
+                        {
+                            (alter_ego != characters)
+                            && <p className="card-text">
+                                {characters}
+                            </p>
+                        }
+                        <p className="card-text">
+                            <small className="text-muted">{first_appearance}</small>
                         </p>
-                    }
-                    <p className="card-text">
-                        <small className="text-muted">{first_appearance}</small>
-                    </p>
-                    <Link to={`/hero/${id}`} className="btn btn-outline-secondary">
-                        Mas...
-                    </Link>
+                        <Link to={`/hero/${id}`} className="btn btn-outline-secondary">
+                            Mas...
+                        </Link>
+                    </div>
                 </div>
             </div>
+
+
+            {/*<div className="card border-primary">*/}
+            {/*    <div className="card-body">*/}
+            {/*        <img src={`./assets/heroes/${id}.jpg`} className="card-img"/>*/}
+            {/*        <h4 className="card-title">{superhero}</h4>*/}
+            {/*        <p className="card-text">{alter_ego}</p>*/}
+            {/*        {*/}
+            {/*            (alter_ego != characters)*/}
+            {/*            && <p className="card-text">*/}
+            {/*                {characters}*/}
+            {/*            </p>*/}
+            {/*        }*/}
+            {/*        <p className="card-text">*/}
+            {/*            <small className="text-muted">{first_appearance}</small>*/}
+            {/*        </p>*/}
+            {/*        <Link to={`/hero/${id}`} className="btn btn-outline-secondary">*/}
+            {/*            Mas...*/}
+            {/*        </Link>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     )
 }
