@@ -23,6 +23,7 @@ export const SearchScreen = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         navigate(`?q=${searchText}`);
+        localStorage.setItem('searchText',searchText);
     }
 
     return <div>
@@ -58,7 +59,7 @@ export const SearchScreen = () => {
                 <hr/>
 
                 {
-                    (q === '')
+                    (q === "")
                     &&
                     <div className="alert alert-info">
                         Search a Hero
