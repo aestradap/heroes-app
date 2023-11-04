@@ -1,6 +1,6 @@
 export const heroes = [
     {
-        'id': 'dcbatman',
+        'id': 'dc-batman',
         'superhero':'Batman',
         'publisher':'DC Comics',
         'alter_ego':'Bruce Wayne',
@@ -8,7 +8,7 @@ export const heroes = [
         'characters':'Bruce Wayne'
     },
     {
-        'id': 'dcsuperman',
+        'id': 'dc-superman',
         'superhero':'Superman',
         'publisher':'DC Comics',
         'alter_ego':'Kal-El',
@@ -16,7 +16,7 @@ export const heroes = [
         'characters':'Kal-El'
     },
     {
-        'id': 'dcflash',
+        'id': 'dc-flash',
         'superhero':'Flash',
         'publisher':'DC Comics',
         'alter_ego':'Jay Garrick',
@@ -24,7 +24,7 @@ export const heroes = [
         'characters':'Jay Garrick, Barry Allen, Wally West, Bart Allen'
     },
     {
-        'id': 'dcgreen',
+        'id': 'dc-green',
         'superhero':'Green Lantern',
         'publisher':'DC Comics',
         'alter_ego':'Alan Scott',
